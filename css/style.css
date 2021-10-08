@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden;
 }
+header {
+  position: relative;
+}
 header .navbar .navbar-nav .nav-item .nav-link {
   font-weight: bold;
   font-size: 22px;
@@ -20,10 +23,6 @@ header .navbar .navbar-nav .nav-item .active {
   border-bottom: 2px solid #0089d9;
 }
 
-header {
-  position: relative;
-  height: 100vh;
-}
 header .navbar .navbar-brand h1 {
   font-size: 30px;
   font-family: "Oswald", sans-serif;
@@ -70,6 +69,7 @@ header .bg-brand-image {
 .hero-section .hero-section-image img {
   z-index: 999;
   width: 100%;
+  margin-bottom: -50px;
 }
 header .flower-header-image {
   position: absolute;
@@ -88,28 +88,30 @@ header .bg-header-bottom {
   position: absolute;
   bottom: 0;
   right: -60px;
-  width: 55%;
+  width: 60%;
   z-index: 0;
 }
 /* Small */
+
 @media (max-width: 768px) {
   header .bg-brand-image {
     position: absolute;
     top: -50px;
     left: -40px;
     z-index: 0;
-    width: 60%;
+    width: 80%;
   }
   header .bg-header-bottom {
-    bottom: -200px;
-    width: 70%;
-    z-index: 0;
+    bottom: 0;
   }
   header .flower-header-image {
-    bottom: -200px;
+    bottom: 0;
   }
   header .flower-header-right-bottom-image {
-    bottom: -200px;
+    bottom: 0;
+  }
+  .hero-section .hero-section-image {
+    margin-top: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -122,13 +124,6 @@ header .bg-header-bottom {
   }
   .hero-section .hero-section-image img {
     width: 140%;
-  }
-  header .bg-header-bottom {
-    position: absolute;
-    bottom: 0;
-    right: -60px;
-    width: 70%;
-    z-index: 0;
   }
 }
 
@@ -166,7 +161,7 @@ header .bg-header-bottom {
 }
 @media (max-width: 768px) {
   .abstract-out-vision .abstract-out-vision-image {
-    margin-top: 200px;
+    margin-top: 40px;
   }
 }
 .abstract-out-vision .abstract-out-vision-image img {
@@ -190,11 +185,7 @@ header .bg-header-bottom {
 }
 @media (max-width: 768px) {
   .abstract-out-vision .abstract-out-vision-data h2 {
-    color: #00318b;
-    font-weight: bold;
-    font-size: 50px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
+    font-size: 35px;
   }
 }
 @media (min-width: 768px) {
@@ -296,11 +287,6 @@ header .bg-header-bottom {
   color: #5d5d5d;
 }
 
-@media (max-width: 768px) {
-  .abstract-out-mission .abstract-out-mission-image {
-    /* margin-top: 200px; */
-  }
-}
 .abstract-out-mission .abstract-out-mission-image img {
   width: 100%;
 }
@@ -315,6 +301,11 @@ header .bg-header-bottom {
 .abstract-out-mission .abstract-out-mission-data p {
   font-size: 17px;
   color: #5d5d5d;
+}
+@media (max-width: 768px) {
+  .abstract-out-mission .abstract-out-mission-data h2 {
+    font-size: 35px;
+  }
 }
 @media (min-width: 768px) {
   .abstract-out-mission .abstract-out-mission-data {
@@ -383,6 +374,7 @@ header .bg-header-bottom {
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 .products h2 {
   padding-bottom: 20px;
@@ -392,10 +384,29 @@ header .bg-header-bottom {
   letter-spacing: 10px;
   color: #0089d9;
 }
+
 .products img {
   width: 100%;
   margin: 20px;
 }
+/* Small */
+@media (max-width: 768px) {
+  .products img {
+    width: 50%;
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-width: 768px) {
+}
+
+/* Meduiam */
+@media (min-width: 992px) {
+}
+
+/* Large */
+@media (min-width: 1200px) {
+}
+
 /* ########### End Products ########### */
 /* ########### Start Advantages ########### */
 .advantages {
