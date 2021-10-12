@@ -503,6 +503,7 @@ footer li a i:hover {
   font-weight: bold;
   color: #0089d9;
   text-transform: capitalize;
+  margin-top: 15px;
 }
 
 .contact-us i {
@@ -518,9 +519,6 @@ footer li a i:hover {
   font-size: 20px;
 }
 
-.contact-us .label-email {
-  margin-top: 20px;
-}
 .contact-us .firstName {
   margin-top: 80px;
 }
