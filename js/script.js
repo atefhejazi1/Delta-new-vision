@@ -46,10 +46,20 @@ window.onscroll = function () {
     document.querySelector(
       "header .navbar .navbar-nav .nav-item .active"
     ).style.borderBottom = "2px solid #00318b";
-    
+
     document.querySelector("header .navbar .navbar-brand h1").style.color =
       "#00318b";
     document.querySelector("header .navbar .navbar-brand h1 span").style.color =
       "#0089d9";
   }
+  let scrollTopTop = document.querySelector(".scroll-Top");
+  if (this.scrollY > 800) {
+    scrollTopTop.classList.add("show-scroll-top");
+  } else {
+    scrollTopTop.classList.remove("show-scroll-top");
+  }
+};
+
+document.querySelector(".scroll-Top").onclick = function () {
+  window.scrollTo(0, 0);
 };

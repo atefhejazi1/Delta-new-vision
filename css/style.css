@@ -516,3 +516,21 @@ footer li a i:hover {
   font-weight: bold;
   font-size: 20px;
 }
+
+.scroll-Top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0089d9;
+  border-radius: 50%;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.show-scroll-top {
+  display: block;
+}
