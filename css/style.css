@@ -494,7 +494,8 @@ footer li a i:hover {
 }
 
 .contact-us {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .contact-us label {
@@ -517,6 +518,12 @@ footer li a i:hover {
   font-size: 20px;
 }
 
+.contact-us .label-email {
+  margin-top: 20px;
+}
+.contact-us .firstName {
+  margin-top: 80px;
+}
 .scroll-Top {
   display: none;
   position: fixed;
